@@ -5,6 +5,6 @@ onmessage = messageEvent => {
 	do
 	{
 		index = Math.round(Math.random()*length);
-	}while(0 == messageEvent.data.gameboard[index]));
+	}while(0 == messageEvent.data.gameboard[index]);
 	postMessage(index);
 };
