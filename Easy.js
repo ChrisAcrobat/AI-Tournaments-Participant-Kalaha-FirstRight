@@ -1,6 +1,6 @@
 'use strict'
 onmessage = messageEvent => {
-	let length = (messageEvent.data.gameboard.length/2) - 2; // -2?
+	let length = (messageEvent.data.gameboard.length/2) - 2;
 	let lengthFull = messageEvent.data.gameboard.length - 1;	// Do not count opposite store.
 	let index = -1;
 	// Go from right.
