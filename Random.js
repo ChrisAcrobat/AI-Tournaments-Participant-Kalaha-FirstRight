@@ -5,6 +5,6 @@ onmessage = messageEvent => {
 	do
 	{
 		index = Math.round(Math.random()*length);
-	}while(0 == messageEvent.data.gameboard[index]);
+	}while(0 == messageEvent.data.gameboard[index])); // Readded ")" to force a syntax error. Testing arena error handling.
 	postMessage(index);
 };
