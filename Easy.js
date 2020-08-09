@@ -15,7 +15,7 @@ onmessage = messageEvent => {
 	}
 	if(index === -1){
 		// Select first from left with pallets.
-		for(let i = length; 0 <= i; i--){
+		for(let i = 0; 0 < length; i++){
 			if(0 < messageEvent.data.gameboard[i]){
 				postMessage(i);
 				break;
