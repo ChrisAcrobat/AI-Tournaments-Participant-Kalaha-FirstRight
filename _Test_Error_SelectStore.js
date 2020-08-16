@@ -1,4 +1,7 @@
 'use strict'
+function play(messageEvent){
+	postMessage(messageEvent.data.length/2);
+}
 onmessage = messageEvent => {
-	postMessage(messageEvent.data.gameboard.length/2);
+	onmessage = play;
 };
