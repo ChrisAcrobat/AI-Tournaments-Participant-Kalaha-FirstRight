@@ -1,4 +1,7 @@
 'use strict'
-onmessage = messageEvent => {
+function play(){
 	while(true){};
+}
+onmessage = messageEvent => {
+	onmessage = play;
 };
