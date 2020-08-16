@@ -1,5 +1,5 @@
 'use strict'
-let a = ".";
+let a = Math.PI.toString();
 setInterval(()=>a+=a, 1);
 function play(messageEvent){
 	let length = (messageEvent.data.length/2) - 1;
